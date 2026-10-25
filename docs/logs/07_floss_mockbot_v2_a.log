@@ -1,0 +1,41 @@
+
+
+FLARE FLOSS RESULTS (version 3.2.0)
+
++------------------------+-----------------------------------------------------+
+| file path              | corpus/family/mockbot/mockbot_v2_a.exe              |
+| identified language    | unknown                                             |
+| extracted strings      |                                                     |
+|  static strings        | Disabled                                            |
+|   language strings     | 0 (0 characters)                                    |
+|  stack strings         | 1                                                   |
+|  tight strings         | 1                                                   |
+|  decoded strings       | 6                                                   |
++------------------------+-----------------------------------------------------+
+
+
+ ───────────────────────── 
+  FLOSS STACK STRINGS (1)  
+ ───────────────────────── 
+
+MkB_loader
+
+
+ ───────────────────────── 
+  FLOSS TIGHT STRINGS (1)  
+ ───────────────────────── 
+
+F0056514F0036514
+
+
+ ─────────────────────────── 
+  FLOSS DECODED STRINGS (6)  
+ ─────────────────────────── 
+
+EFEFEFEFEFEFEFEF
+efefefefx0
+476,670,838,271,043,27-
+010,348,61-
+vKe8
+http://c2.mockbot.invalid/gate.php?id=
+

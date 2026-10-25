@@ -1,0 +1,6 @@
+MockBot_Strings corpus/family/mockbot/mockbot_v3_drift.exe
+0x7400:$s1: [MockBot harmless lab sample] cfg=%s tag=%s junk=%u
+0x74f0:$s3: MKBCFG::v2::build=
+0x7448:$s5: mutex=%d run=%d net=%d (no network activity performed)
+0x7200:$x6: \x03\x1F\x1F\x1BQDD\x08YE\x06\x04\x08\x00\x09\x04\x1FE\x02\x05\x1D\x0A\x07\x02\x0FD\x0C\x0A\x1F\x0EE\x1B\x03\x1BT\x02\x0FV
+MockBot_Imports_Baseline corpus/family/mockbot/mockbot_v3_drift.exe

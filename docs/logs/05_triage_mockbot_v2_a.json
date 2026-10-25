@@ -1,0 +1,173 @@
+{
+  "file": "mockbot_v2_a.exe",
+  "path": "corpus/family/mockbot/mockbot_v2_a.exe",
+  "size": 43520,
+  "md5": "1d269eb98bbc678ebd557159a8a6dff8",
+  "sha1": "c13cc5c28382e601113c37f0373f6b9e30e58d1a",
+  "sha256": "b775b6c06a70504470230e77bdbe09d240844fe7b9dfe13345cb2aeb1b68795b",
+  "type": "PE",
+  "entropy": 6.172,
+  "pe": {
+    "pe_type": "PE32 EXE",
+    "dotnet": false,
+    "machine": "x86",
+    "subsystem": "Console",
+    "timestamp": 0,
+    "entrypoint": "0x13e0",
+    "imphash": "8bb7000989c9063280db40b31f4a04da",
+    "sections": [
+      {
+        "name": ".text",
+        "vsize": 28932,
+        "rawsize": 29184,
+        "entropy": 6.294,
+        "exec": true,
+        "write": false
+      },
+      {
+        "name": ".data",
+        "vsize": 204,
+        "rawsize": 512,
+        "entropy": 1.791,
+        "exec": false,
+        "write": true
+      },
+      {
+        "name": ".rdata",
+        "vsize": 2904,
+        "rawsize": 3072,
+        "entropy": 5.393,
+        "exec": false,
+        "write": false
+      },
+      {
+        "name": ".eh_fram",
+        "vsize": 5120,
+        "rawsize": 5120,
+        "entropy": 4.898,
+        "exec": false,
+        "write": false
+      },
+      {
+        "name": ".bss",
+        "vsize": 2676,
+        "rawsize": 0,
+        "entropy": 0.0,
+        "exec": false,
+        "write": true
+      },
+      {
+        "name": ".idata",
+        "vsize": 1816,
+        "rawsize": 2048,
+        "entropy": 4.482,
+        "exec": false,
+        "write": true
+      },
+      {
+        "name": ".CRT",
+        "vsize": 48,
+        "rawsize": 512,
+        "entropy": 0.216,
+        "exec": false,
+        "write": true
+      },
+      {
+        "name": ".tls",
+        "vsize": 8,
+        "rawsize": 512,
+        "entropy": 0.0,
+        "exec": false,
+        "write": true
+      },
+      {
+        "name": ".reloc",
+        "vsize": 1092,
+        "rawsize": 1536,
+        "entropy": 5.196,
+        "exec": false,
+        "write": false
+      }
+    ],
+    "imports": {
+      "advapi32.dll": [
+        "RegCloseKey",
+        "RegOpenKeyExA"
+      ],
+      "kernel32.dll": [
+        "CloseHandle",
+        "CreateMutexA",
+        "DeleteCriticalSection",
+        "EnterCriticalSection",
+        "FreeLibrary",
+        "GetLastError",
+        "GetModuleHandleA",
+        "GetModuleHandleW",
+        "GetProcAddress",
+        "InitializeCriticalSection",
+        "IsDBCSLeadByteEx",
+        "IsDebuggerPresent",
+        "LeaveCriticalSection",
+        "LoadLibraryA",
+        "MultiByteToWideChar",
+        "SetUnhandledExceptionFilter",
+        "Sleep",
+        "TlsGetValue",
+        "VirtualProtect",
+        "VirtualQuery",
+        "WideCharToMultiByte"
+      ],
+      "msvcrt.dll": [
+        "__getmainargs",
+        "__initenv",
+        "__mb_cur_max",
+        "__p__commode",
+        "__p__fmode",
+        "__set_app_type",
+        "__setusermatherr",
+        "_amsg_exit",
+        "_cexit",
+        "_errno",
+        "_initterm",
+        "_iob",
+        "_lock",
+        "_onexit",
+        "_unlock",
+        "abort",
+        "atoi",
+        "calloc",
+        "exit",
+        "fprintf",
+        "fputc",
+        "free",
+        "fwrite",
+        "localeconv",
+        "malloc",
+        "memcpy",
+        "memset",
+        "puts",
+        "setlocale",
+        "signal",
+        "strchr",
+        "strcpy",
+        "strerror",
+        "strlen",
+        "strncmp",
+        "vfprintf",
+        "wcslen"
+      ],
+      "wininet.dll": [
+        "InternetCloseHandle",
+        "InternetOpenA"
+      ]
+    },
+    "import_count": 62,
+    "exports": [],
+    "packer_hints": [],
+    "pe_warnings": []
+  },
+  "string_counts": {
+    "ascii": 134,
+    "wide": 2
+  }
+}

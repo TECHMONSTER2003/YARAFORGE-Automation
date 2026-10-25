@@ -1,0 +1,19 @@
+[family] mockbot_v2_a.exe         x86 -O0  key=0x5a
+[family] mockbot_v2_b.exe         x86 -O2  key=0x5a
+[family] mockbot_v2_c.exe         x64 -O0  key=0x5a
+[family] mockbot_v2_d.exe         x64 -O2  key=0x5a
+[family] mockbot_v2_e.exe         x86 -Os  key=0x37
+[family] mockbot_v2_f.exe         x64 -Os  key=0x37
+[family] mockbot_v2_g.exe         x64 -O1  key=0x5a
+[family] mockbot_v3_drift.exe     x64 -O2  key=0x6b
+[clean ] clean_hello_x86.exe
+[clean ] clean_hello_x64.exe
+[clean ] clean_checksum_x86.exe
+[clean ] clean_checksum_x64.exe
+[clean ] clean_filecopy_x86.exe
+[clean ] clean_filecopy_x64.exe
+[clean ] clean_sysinfo_x86.exe
+[clean ] clean_sysinfo_x64.exe
+[clean ] clean_nearmiss_updater_x86.exe
+[clean ] clean_nearmiss_updater_x64.exe
+[clean ] total clean files: 99

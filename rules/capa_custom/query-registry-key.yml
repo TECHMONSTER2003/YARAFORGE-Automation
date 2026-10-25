@@ -1,0 +1,17 @@
+rule:
+  meta:
+    name: open or query registry key
+    namespace: host-interaction/registry
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Discovery::Query Registry [T1012]
+    mbc:
+      - Operating System::Registry::Query Registry Key [C0036.005]
+  features:
+    - or:
+      - api: advapi32.RegOpenKeyEx
+      - api: advapi32.RegQueryValueEx

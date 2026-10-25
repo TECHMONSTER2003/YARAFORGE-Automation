@@ -1,0 +1,15 @@
+rule:
+  meta:
+    name: create mutex
+    namespace: host-interaction/mutex
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Defense Evasion::Execution Guardrails [T1480]
+    mbc:
+      - Process::Create Mutex [C0042]
+  features:
+    - api: kernel32.CreateMutex

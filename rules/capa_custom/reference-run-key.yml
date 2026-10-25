@@ -1,0 +1,13 @@
+rule:
+  meta:
+    name: reference Run registry key for autostart
+    namespace: persistence/registry/run
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Persistence::Boot or Logon Autostart Execution::Registry Run Keys / Startup Folder [T1547.001]
+  features:
+    - string: /Software\\Microsoft\\Windows\\CurrentVersion\\Run/i

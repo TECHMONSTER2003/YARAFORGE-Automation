@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.17, pytest-9.1.1, pluggy-1.7.0 -- /usr/local/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/yaraforge
+plugins: platformdirs-4.12.4, anyio-4.15.1
+collecting ... collected 15 items
+
+tests/test_core.py::test_entropy_bounds PASSED                           [  6%]
+tests/test_core.py::test_magic_type PASSED                               [ 13%]
+tests/test_core.py::test_malformed_pe_does_not_raise PASSED              [ 20%]
+tests/test_core.py::test_static_strings_ascii_and_wide PASSED            [ 26%]
+tests/test_core.py::test_prefixes_end_on_delimiter PASSED                [ 33%]
+tests/test_core.py::test_noise[EFEFEFEFEFEFEFEF-low_diversity] PASSED    [ 40%]
+tests/test_core.py::test_noise[476,670,838,271,043,27--no_letters] PASSED [ 46%]
+tests/test_core.py::test_noise[v1.2.3-4.5.6-7.8.9-mostly_digits_punct] PASSED [ 53%]
+tests/test_core.py::test_noise[Global\\MkB_7f3a9c21-None] PASSED         [ 60%]
+tests/test_core.py::test_ioc_classes PASSED                              [ 66%]
+tests/test_core.py::test_yara_escaping_compiles PASSED                   [ 73%]
+tests/test_core.py::test_metrics PASSED                                  [ 80%]
+tests/test_core.py::test_selection_rejects_goodware_and_generalises_prefix PASSED [ 86%]
+tests/test_core.py::test_build_rules_compiles_without_decoded_strings PASSED [ 93%]
+tests/test_core.py::test_build_rules_empty_raises PASSED                 [100%]
+
+=============================== warnings summary ===============================
+yaraforge/scoring.py:7
+  /home/claude/yaraforge/yaraforge/scoring.py:7: SyntaxWarning: invalid escape sequence '\-'
+    \-- low coverage  -> prefix generalisation (defeats builder randomisation,
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 15 passed, 1 warning in 0.07s =========================

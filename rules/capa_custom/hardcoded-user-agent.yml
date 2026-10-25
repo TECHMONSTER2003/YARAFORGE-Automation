@@ -1,0 +1,13 @@
+rule:
+  meta:
+    name: contain hard-coded browser user agent
+    namespace: communication/http
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Command and Control::Application Layer Protocol::Web Protocols [T1071.001]
+  features:
+    - string: /Mozilla\/\d\.\d \(compatible;/

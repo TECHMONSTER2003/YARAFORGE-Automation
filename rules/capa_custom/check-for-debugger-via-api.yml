@@ -1,0 +1,15 @@
+rule:
+  meta:
+    name: check for debugger via API
+    namespace: anti-analysis/anti-debugging/debugger-detection
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Defense Evasion::Debugger Evasion [T1622]
+    mbc:
+      - Anti-Behavioral Analysis::Detect Debugger::IsDebuggerPresent [B0001.008]
+  features:
+    - api: kernel32.IsDebuggerPresent

@@ -1,0 +1,19 @@
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     clean_nearmiss_updater_x64.exe strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     clean_nearmiss_updater_x86.exe strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v2_a.exe               strings=$s1,$s2,$s3,$s4,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v2_a.exe               strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v2_b.exe               strings=$s1,$s2,$s3,$s4,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v2_b.exe               strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v2_c.exe               strings=$s1,$s2,$s3,$s4,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v2_c.exe               strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v2_d.exe               strings=$s1,$s2,$s3,$s4,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v2_d.exe               strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v2_e.exe               strings=$s1,$s2,$s3,$s4,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v2_e.exe               strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v2_f.exe               strings=$s1,$s2,$s3,$s4,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v2_f.exe               strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v2_g.exe               strings=$s1,$s2,$s3,$s4,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v2_g.exe               strings=
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Strings              mockbot_v3_drift.exe           strings=$s1,$s3,$s5,$x6
+2026-10-25 16:30:38 | INFO  | scan     | MATCH MockBot_Imports_Baseline     mockbot_v3_drift.exe           strings=
+2026-10-25 16:30:38 | INFO  | scan     | scanned 108 files, 10 matched

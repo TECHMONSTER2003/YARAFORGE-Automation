@@ -1,0 +1,18 @@
+rule:
+  meta:
+    name: encode or decode data using XOR in a loop
+    namespace: data-manipulation/encoding/xor
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Defense Evasion::Obfuscated Files or Information [T1027]
+      - Defense Evasion::Deobfuscate/Decode Files or Information [T1140]
+    mbc:
+      - Data::Encode Data::XOR [C0026.002]
+  features:
+    - and:
+      - characteristic: nzxor
+      - characteristic: loop

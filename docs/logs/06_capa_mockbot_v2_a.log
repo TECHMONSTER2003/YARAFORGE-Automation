@@ -1,0 +1,49 @@
+
+┌───────────┬──────────────────────────────────────────────────────────────────┐
+│ md5       │ 1d269eb98bbc678ebd557159a8a6dff8                                 │
+│ sha1      │ c13cc5c28382e601113c37f0373f6b9e30e58d1a                         │
+│ sha256    │ b775b6c06a70504470230e77bdbe09d240844fe7b9dfe13345cb2aeb1b68795b │
+│ analysis  │ static                                                           │
+│ os        │ windows                                                          │
+│ format    │ pe                                                               │
+│ arch      │ i386                                                             │
+│ path      │ /home/claude/yaraforge/corpus/family/mockbot/mockbot_v2_a.exe    │
+└───────────┴──────────────────────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ATT&CK Tactic        ┃ ATT&CK Technique                                      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ COMMAND AND CONTROL  │ Application Layer Protocol::Web Protocols [T1071.001] │
+│ DEFENSE EVASION      │ Debugger Evasion [T1622]                              │
+│                      │ Deobfuscate/Decode Files or Information [T1140]       │
+│                      │ Execution Guardrails [T1480]                          │
+│                      │ Obfuscated Files or Information [T1027]               │
+│ DISCOVERY            │ Query Registry [T1012]                                │
+│ EXECUTION            │ Shared Modules [T1129]                                │
+│ PERSISTENCE          │ Boot or Logon Autostart Execution::Registry Run Keys  │
+│                      │ / Startup Folder [T1547.001]                          │
+└──────────────────────┴───────────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ MBC Objective            ┃ MBC Behavior                                      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ ANTI-BEHAVIORAL ANALYSIS │ Detect Debugger::IsDebuggerPresent [B0001.008]    │
+│ COMMUNICATION            │ HTTP Communication::Initialize HTTP Client        │
+│                          │ [C0002.001]                                       │
+│ DATA                     │ Encode Data::XOR [C0026.002]                      │
+│ OPERATING SYSTEM         │ Registry::Query Registry Key [C0036.005]          │
+│ PROCESS                  │ Create Mutex [C0042]                              │
+└──────────────────────────┴───────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Capability                            ┃ Namespace                            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ check for debugger via API            │ anti-analysis/anti-debugging/debugg… │
+│ contain hard-coded browser user agent │ communication/http                   │
+│ initialize WinINet HTTP client        │ communication/http/client            │
+│ encode or decode data using XOR in a  │ data-manipulation/encoding/xor       │
+│ loop (2 matches)                      │                                      │
+│ create mutex                          │ host-interaction/mutex               │
+│ open or query registry key            │ host-interaction/registry            │
+│ link function at runtime              │ linking/runtime-linking              │
+│ reference Run registry key for        │ persistence/registry/run             │
+│ autostart                             │                                      │
+└───────────────────────────────────────┴──────────────────────────────────────┘
+

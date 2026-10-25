@@ -1,0 +1,15 @@
+rule:
+  meta:
+    name: initialize WinINet HTTP client
+    namespace: communication/http/client
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Command and Control::Application Layer Protocol::Web Protocols [T1071.001]
+    mbc:
+      - Communication::HTTP Communication::Initialize HTTP Client [C0002.001]
+  features:
+    - api: wininet.InternetOpen

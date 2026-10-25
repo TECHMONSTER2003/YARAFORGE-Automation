@@ -1,0 +1,60 @@
+2026-10-25 16:28:31 | INFO  | cli      | yaraforge 1.0.0 | python 3.13.17 | yara-python 4.5.4
+2026-10-25 16:28:31 | INFO  | pipeline | family=MockBot | samples=8 | goodware=99 | workers=2 | floss=True | capa=True
+2026-10-25 16:28:31 | INFO  | pipeline | SAFETY: static analysis only - no sample is executed
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v2_a.exe       | PE32 EXE x86   |    42.5 KB | H=6.17 | imphash=8bb7000989c9 | sha256=b775b6c06a705044..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v2_a.exe       | ascii=134 wide=2 | decoded=6 stack=1 tight=1 (34.0s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v2_a.exe       | 8 capabilities | ATT&CK T1012,T1027,T1071.001,T1129,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v2_b.exe       | PE32 EXE x86   |    42.5 KB | H=6.12 | imphash=0b304bb4d557 | sha256=b34a482c7b94faff..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v2_b.exe       | ascii=124 wide=2 | decoded=7 stack=0 tight=2 (33.3s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v2_b.exe       | 8 capabilities | ATT&CK T1012,T1027,T1071.001,T1129,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v2_c.exe       | PE32+ EXE x64  |    40.5 KB | H=5.91 | imphash=ee999ea17f03 | sha256=ce6b728f7fff9e54..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v2_c.exe       | ascii=117 wide=1 | decoded=2 stack=1 tight=1 (28.9s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v2_c.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v2_d.exe       | PE32+ EXE x64  |    40.0 KB | H=5.90 | imphash=5ba38584555f | sha256=a9931cc17540e05e..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v2_d.exe       | ascii=115 wide=1 | decoded=1 stack=0 tight=2 (27.7s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v2_d.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v2_e.exe       | PE32 EXE x86   |    42.5 KB | H=6.12 | imphash=8bb7000989c9 | sha256=844df8481b9821bb..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v2_e.exe       | ascii=126 wide=2 | decoded=7 stack=0 tight=2 (33.5s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v2_e.exe       | 8 capabilities | ATT&CK T1012,T1027,T1071.001,T1129,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v2_f.exe       | PE32+ EXE x64  |    40.0 KB | H=5.90 | imphash=ee999ea17f03 | sha256=010c1af6b5bd2e76..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v2_f.exe       | ascii=115 wide=1 | decoded=1 stack=0 tight=2 (28.4s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v2_f.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v2_g.exe       | PE32+ EXE x64  |    40.0 KB | H=5.90 | imphash=ee999ea17f03 | sha256=6f05d98c2210173e..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v2_g.exe       | ascii=111 wide=1 | decoded=1 stack=0 tight=2 (26.5s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v2_g.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:32 | INFO  | triage   | mockbot_v3_drift.exe   | PE32+ EXE x64  |    40.0 KB | H=5.89 | imphash=5ba38584555f | sha256=2c034d030d3702d2..
+2026-10-25 16:30:32 | INFO  | strings  | mockbot_v3_drift.exe   | ascii=114 wide=1 | decoded=1 stack=0 tight=2 (26.0s)
+2026-10-25 16:30:32 | INFO  | capa     | mockbot_v3_drift.exe   | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 16:30:36 | INFO  | goodware | baseline built: 99 files (99 PE), 52368 unique strings, 4117 unique imports
+2026-10-25 16:30:36 | INFO  | scoring  | reject IOC-like string also in 2 goodware file(s): 'Software\\Microsoft\\Windows\\CurrentVersion\\Run'
+2026-10-25 16:30:36 | INFO  | scoring  | unique strings=223 | survivors=6 | prefix-generalised=1 | verified=6 | selected=6
+2026-10-25 16:30:36 | INFO  | scoring  | rejections: low_coverage=93, goodware_exact=74, stoplist=38, mostly_digits_punct=5, no_letters=4, length=2, low_diversity=1, xor_encoded_form_of_decoded=1
+2026-10-25 16:30:36 | INFO  | scoring  |   score=1.000 cov=1.00 src=static  ioc=config_marker '[MockBot harmless lab sample] cfg=%s tag=%s junk=%u'
+2026-10-25 16:30:36 | INFO  | scoring  |   score=0.925 cov=0.88 src=static  ioc=user_agent    'Mozilla/4.0 (compatible; MkBot/2.1; lab)'
+2026-10-25 16:30:36 | INFO  | scoring  |   score=0.913 cov=1.00 src=prefix  ioc=config_marker 'MKBCFG::v2::build='
+2026-10-25 16:30:36 | INFO  | scoring  |   score=0.844 cov=0.88 src=static  ioc=mutex         'Global\\MkB_7f3a9c21'
+2026-10-25 16:30:36 | INFO  | scoring  |   score=0.800 cov=1.00 src=static  ioc=-             'mutex=%d run=%d net=%d (no network activity performed)'
+2026-10-25 16:30:36 | INFO  | scoring  |   score=0.700 cov=0.50 src=decoded ioc=url           'http://c2.mockbot.invalid/gate.php?id='
+2026-10-25 16:30:36 | INFO  | scoring  |   baseline import kernel32.dll!createmutexa                goodware_ratio=0.020
+2026-10-25 16:30:36 | INFO  | scoring  |   baseline import wininet.dll!internetopena                goodware_ratio=0.020
+2026-10-25 16:30:36 | INFO  | scoring  |   baseline import advapi32.dll!regopenkeyexa               goodware_ratio=0.030
+2026-10-25 16:30:36 | INFO  | scoring  |   baseline import wininet.dll!internetclosehandle          goodware_ratio=0.030
+2026-10-25 16:30:36 | INFO  | yaragen  | compiled OK -> mockbot.yar | strings=6 | condition='3 of them' | filesize<85KB
+2026-10-25 16:30:36 | INFO  | eval     | MockBot_Strings              TP=8 FN=0 FP=0 TN=99 | precision=1.000 recall=1.000 F1=1.000 FPR=0.0000
+2026-10-25 16:30:36 | INFO  | eval     | MockBot_Imports_Baseline     TP=8 FN=0 FP=2 TN=97 | precision=0.800 recall=1.000 F1=0.889 FPR=0.0202
+2026-10-25 16:30:36 | WARNING | eval     | MockBot_Imports_Baseline     FALSE POSITIVE on goodware: clean_nearmiss_updater_x64.exe
+2026-10-25 16:30:36 | WARNING | eval     | MockBot_Imports_Baseline     FALSE POSITIVE on goodware: clean_nearmiss_updater_x86.exe
+2026-10-25 16:30:36 | INFO  | loo      | held-out=mockbot_v2_a.exe       DETECTED matched=6/6 need=3 goodware_FP=0
+2026-10-25 16:30:36 | INFO  | loo      | held-out=mockbot_v2_b.exe       DETECTED matched=6/6 need=3 goodware_FP=0
+2026-10-25 16:30:37 | INFO  | loo      | held-out=mockbot_v2_c.exe       DETECTED matched=6/6 need=3 goodware_FP=0
+2026-10-25 16:30:37 | INFO  | loo      | held-out=mockbot_v2_d.exe       DETECTED matched=6/6 need=3 goodware_FP=0
+2026-10-25 16:30:37 | INFO  | loo      | held-out=mockbot_v2_e.exe       DETECTED matched=5/6 need=3 goodware_FP=0
+2026-10-25 16:30:37 | INFO  | loo      | held-out=mockbot_v2_f.exe       DETECTED matched=6/6 need=3 goodware_FP=0
+2026-10-25 16:30:37 | INFO  | loo      | held-out=mockbot_v2_g.exe       DETECTED matched=6/6 need=3 goodware_FP=0
+2026-10-25 16:30:38 | INFO  | loo      | held-out=mockbot_v3_drift.exe   DETECTED matched=4/6 need=3 goodware_FP=0
+2026-10-25 16:30:38 | INFO  | loo      | LOO detection rate = 8/8 (100.0%)
+2026-10-25 16:30:38 | INFO  | pipeline | done in 127.0s
+2026-10-25 16:30:38 | INFO  | cli      | wrote out/report.json
+2026-10-25 16:30:38 | INFO  | cli      | wrote out/iocs.csv
+2026-10-25 16:30:38 | INFO  | cli      | wrote out/attack.csv
+2026-10-25 16:30:38 | INFO  | cli      | wrote out/summary.md

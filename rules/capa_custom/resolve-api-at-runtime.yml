@@ -1,0 +1,13 @@
+rule:
+  meta:
+    name: link function at runtime
+    namespace: linking/runtime-linking
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    att&ck:
+      - Execution::Shared Modules [T1129]
+  features:
+    - api: kernel32.GetProcAddress

@@ -1,0 +1,15 @@
+type,value,origin,samples,in_goodware
+sha256,010c1af6b5bd2e768b2ac1e973df6ed51504393570ca74ded94525927381a1b2,file,1,False
+sha256,2c034d030d3702d246378e72334f13e792c7e221b14ec217bb4ef71896b34411,file,1,False
+sha256,6f05d98c2210173eb4bb9a158ecba565ba41bacfdd2944d4bc0474a9675195cd,file,1,False
+sha256,844df8481b9821bbf06e3fd0c9858b80fd2e4608130779463741f959bfb31ff8,file,1,False
+sha256,a9931cc17540e05e36cd55d9b5c35d7f0b767a5fb2286673b281d2b9d3a18186,file,1,False
+sha256,b34a482c7b94faff6195575cb714d400b074c9c718444ae5cea9ab033b0eb66a,file,1,False
+sha256,b775b6c06a70504470230e77bdbe09d240844fe7b9dfe13345cb2aeb1b68795b,file,1,False
+sha256,ce6b728f7fff9e54f7cdcd0bee2656ccbe649dc05a1122e0a9bdb28d234a04c2,file,1,False
+mutex,Global\MkB_7f3a9c21,static,7,False
+mutex,Global\MkB3_e01d44,static,1,False
+registry,Software\Microsoft\Windows\CurrentVersion\Run,static,8,True
+url,http://c2.mockbot.invalid/gate.php?id=,floss-decoded,4,False
+user_agent,Mozilla/4.0 (compatible; MkBot/2.1; lab),static,7,False
+user_agent,Mozilla/5.0 (compatible; MkBot/3.0; lab),static,1,False

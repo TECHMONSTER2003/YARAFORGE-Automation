@@ -1,0 +1,13 @@
+rule:
+  meta:
+    name: copy file
+    namespace: host-interaction/file-system/copy
+    authors:
+      - yaraforge lab (custom rule)
+    scopes:
+      static: function
+      dynamic: unsupported
+    mbc:
+      - File System::Copy File [C0045]
+  features:
+    - api: kernel32.CopyFile
