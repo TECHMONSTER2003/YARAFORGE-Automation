@@ -1,0 +1,68 @@
+2026-10-25 22:53:26 | INFO  | cli      | yaraforge 1.0.0 | python 3.13.14 | yara-python 4.5.4
+2026-10-25 22:53:26 | INFO  | pipeline | family=MockBot | samples=8 | goodware=153 | workers=4 | floss=True | capa=True
+2026-10-25 22:53:26 | INFO  | pipeline | SAFETY: static analysis only - no sample is executed
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v2_a.exe       | PE32 EXE x86   |    82.5 KB | H=6.45 | imphash=12da51a3c352 | sha256=4c2830767b00ecf9..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v2_a.exe       | ascii=146 wide=1 | FLOSS error: floss not found on PATH (32.3s)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v2_a.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v2_b.exe       | PE32 EXE x86   |    82.5 KB | H=6.43 | imphash=12da51a3c352 | sha256=b61828f632ff5a0b..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v2_b.exe       | ascii=153 wide=1 | FLOSS error: floss not found on PATH (cached)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v2_b.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v2_c.exe       | PE32+ EXE x64  |    73.0 KB | H=6.25 | imphash=bbc6a63dbd32 | sha256=9ffe0771a2792c2f..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v2_c.exe       | ascii=107 wide=1 | FLOSS error: floss not found on PATH (14.5s)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v2_c.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v2_d.exe       | PE32+ EXE x64  |    73.0 KB | H=6.22 | imphash=bbc6a63dbd32 | sha256=3faf93e873837d19..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v2_d.exe       | ascii=108 wide=1 | FLOSS error: floss not found on PATH (cached)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v2_d.exe       | 6 capabilities | ATT&CK T1012,T1071.001,T1480,T1547.001,T1622
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v2_e.exe       | PE32 EXE x86   |    67.5 KB | H=6.50 | imphash=12da51a3c352 | sha256=d454c2a08a08de7d..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v2_e.exe       | ascii=132 wide=0 | FLOSS error: floss not found on PATH (cached)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v2_e.exe       | 7 capabilities | ATT&CK T1012,T1027,T1071.001,T1140,T1480,T1547.001,T1622
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v2_f.exe       | PE32+ EXE x64  |    56.5 KB | H=6.22 | imphash=bbc6a63dbd32 | sha256=53e1c6f71bd9b6f9..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v2_f.exe       | ascii=114 wide=0 | FLOSS error: floss not found on PATH (cached)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v2_f.exe       | 6 capabilities | ATT&CK T1012,T1071.001,T1480,T1547.001,T1622
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v2_g.exe       | PE32+ EXE x64  |    73.0 KB | H=6.22 | imphash=bbc6a63dbd32 | sha256=fd7a784b1d990a4a..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v2_g.exe       | ascii=108 wide=1 | FLOSS error: floss not found on PATH (cached)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v2_g.exe       | 6 capabilities | ATT&CK T1012,T1071.001,T1480,T1547.001,T1622
+2026-10-25 22:53:59 | INFO  | triage   | mockbot_v3_drift.exe   | PE32+ EXE x64  |    73.0 KB | H=6.22 | imphash=bbc6a63dbd32 | sha256=2cc42c1b44d37297..
+2026-10-25 22:53:59 | INFO  | strings  | mockbot_v3_drift.exe   | ascii=108 wide=1 | FLOSS error: floss not found on PATH (cached)
+2026-10-25 22:53:59 | INFO  | capa     | mockbot_v3_drift.exe   | 6 capabilities | ATT&CK T1012,T1071.001,T1480,T1547.001,T1622
+2026-10-25 22:54:17 | INFO  | goodware | baseline built: 152 files (152 PE), 245368 unique strings, 4676 unique imports
+2026-10-25 22:54:17 | WARNING | goodware | skipped 1 goodware file(s): larger than max_file_size (52428800 bytes)
+2026-10-25 22:54:17 | INFO  | scoring  | reject IOC-like string also in 2 goodware file(s): 'Software\\Microsoft\\Windows\\CurrentVersion\\Run'
+2026-10-25 22:54:17 | INFO  | scoring  | unique strings=299 | survivors=7 | prefix-generalised=2 | verified=7 | selected=7
+2026-10-25 22:54:17 | INFO  | scoring  | rejections: low_coverage=171, goodware_exact=69, stoplist=31, mostly_digits_punct=13, no_letters=6, low_diversity=4
+2026-10-25 22:54:17 | INFO  | scoring  |   score=0.925 cov=0.88 src=static  ioc=user_agent    'Mozilla/4.0 (compatible; MkBot/2.1; lab)'
+2026-10-25 22:54:17 | INFO  | scoring  |   score=0.913 cov=1.00 src=prefix  ioc=config_marker 'MKBCFG::v2::build='
+2026-10-25 22:54:17 | INFO  | scoring  |   score=0.844 cov=0.88 src=static  ioc=mutex         'Global\\MkB_7f3a9c21'
+2026-10-25 22:54:17 | INFO  | scoring  |   score=0.800 cov=1.00 src=static  ioc=-             'mutex=%d run=%d net=%d (no network activity performed)'
+2026-10-25 22:54:17 | INFO  | scoring  |   score=0.775 cov=0.62 src=static  ioc=config_marker '[MockBot harmless lab sample] cfg=%s tag=%s junk=%u'
+2026-10-25 22:54:17 | INFO  | scoring  |   score=0.694 cov=0.50 src=prefix  ioc=url           'http://c2.mockbot.invalid/gate.'
+2026-10-25 22:54:17 | INFO  | scoring  |   score=0.356 cov=0.50 src=static  ioc=-             'MkB_loadH'
+2026-10-25 22:54:17 | INFO  | scoring  |   baseline import api-ms-win-crt-string-l1-1-0.dll!strcpy  goodware_ratio=0.000
+2026-10-25 22:54:17 | INFO  | scoring  |   baseline import wininet.dll!internetclosehandle          goodware_ratio=0.020
+2026-10-25 22:54:17 | INFO  | scoring  |   baseline import wininet.dll!internetopena                goodware_ratio=0.020
+2026-10-25 22:54:17 | INFO  | scoring  |   baseline import kernel32.dll!createmutexa                goodware_ratio=0.033
+2026-10-25 22:54:17 | INFO  | yaragen  | compiled OK -> mockbot.yar | strings=7 | condition='4 of them' | filesize<165KB
+2026-10-25 22:54:18 | INFO  | eval     | MockBot_Strings              TP=8 FN=0 FP=0 TN=153 | precision=1.000 recall=1.000 F1=1.000 FPR=0.0000
+2026-10-25 22:54:18 | INFO  | eval     | MockBot_Imports_Baseline     TP=8 FN=0 FP=0 TN=153 | precision=1.000 recall=1.000 F1=1.000 FPR=0.0000
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v2_a.exe       matched 5/7 strings: $s1 $s2 $s3 $s4 $s5
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v2_b.exe       matched 6/7 strings: $s1 $s2 $s3 $s4 $s5 $s6
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v2_c.exe       matched 5/7 strings: $s1 $s2 $s3 $s4 $s5
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v2_d.exe       matched 7/7 strings: $s1 $s2 $s3 $s4 $s5 $s6 $s7
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v2_e.exe       matched 5/7 strings: $s1 $s2 $s3 $s4 $s5
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v2_f.exe       matched 6/7 strings: $s1 $s2 $s3 $s4 $s5 $s7
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v2_g.exe       matched 7/7 strings: $s1 $s2 $s3 $s4 $s5 $s6 $s7
+2026-10-25 22:54:18 | DEBUG | eval     | mockbot_v3_drift.exe   matched 5/7 strings: $s2 $s4 $s5 $s6 $s7
+2026-10-25 22:54:19 | INFO  | loo      | held-out=mockbot_v2_a.exe       DETECTED matched=5/7 need=4 goodware_FP=0
+2026-10-25 22:54:20 | INFO  | loo      | held-out=mockbot_v2_b.exe       DETECTED matched=5/6 need=3 goodware_FP=0
+2026-10-25 22:54:20 | INFO  | loo      | held-out=mockbot_v2_c.exe       DETECTED matched=5/7 need=4 goodware_FP=0
+2026-10-25 22:54:21 | INFO  | loo      | held-out=mockbot_v2_d.exe       DETECTED matched=5/5 need=3 goodware_FP=0
+2026-10-25 22:54:22 | INFO  | loo      | held-out=mockbot_v2_e.exe       DETECTED matched=5/7 need=4 goodware_FP=0
+2026-10-25 22:54:23 | INFO  | loo      | held-out=mockbot_v2_f.exe       DETECTED matched=5/6 need=3 goodware_FP=0
+2026-10-25 22:54:23 | INFO  | loo      | held-out=mockbot_v2_g.exe       DETECTED matched=5/5 need=3 goodware_FP=0
+2026-10-25 22:54:24 | INFO  | loo      | held-out=mockbot_v3_drift.exe   DETECTED matched=3/5 need=3 goodware_FP=0
+2026-10-25 22:54:24 | INFO  | loo      | LOO detection rate = 8/8 (100.0%)
+2026-10-25 22:54:24 | INFO  | pipeline | done in 58.0s
+2026-10-25 22:54:24 | INFO  | cli      | wrote out_demo\report.json
+2026-10-25 22:54:24 | INFO  | cli      | wrote out_demo\iocs.csv
+2026-10-25 22:54:24 | INFO  | cli      | wrote out_demo\attack.csv
+2026-10-25 22:54:24 | INFO  | cli      | wrote out_demo\summary.md

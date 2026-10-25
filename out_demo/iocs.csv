@@ -1,0 +1,16 @@
+type,value,origin,samples,in_goodware
+sha256,2cc42c1b44d372976293d6c97908e2df8d3de276797f9516f9e8e70d45c97e8c,file,1,False
+sha256,3faf93e873837d19e4deb5f1a1fb57673baa7bab436a21737b535e9c70e71624,file,1,False
+sha256,4c2830767b00ecf9dae072dfe1e6e58b4a575e5a0f5f86b134da2d574beed826,file,1,False
+sha256,53e1c6f71bd9b6f95a2e8c49b9bcc1563a7a0dcfea9ec33f0ab37ad35dcc46d1,file,1,False
+sha256,9ffe0771a2792c2f40fd440d51a50dd6f673ece4962776dddb062d0fc5c2f895,file,1,False
+sha256,b61828f632ff5a0b3324f5c218cba45529eb79e1da9e3dba2460dbe849fc2da9,file,1,False
+sha256,d454c2a08a08de7db8cc69399561bdfad611bbac0939002807e3abd31952c448,file,1,False
+sha256,fd7a784b1d990a4ae1f3349ac3c5557275eccae9dff9bd94b85b0dfb2d5b1cfd,file,1,False
+mutex,Global\MkB_7f3a9c21,static,7,False
+mutex,Global\MkB3_e01d44,static,1,False
+registry,Software\Microsoft\Windows\CurrentVersion\Run,static,8,True
+url,http://c2.mockbot.invalid/gate.p[MockBot harmless lab sample] cfg=%s tag=%s junk=%u,static,3,False
+url,http://c2.mockbot.invalid/gate.pMkB_load,static,1,False
+user_agent,Mozilla/4.0 (compatible; MkBot/2.1; lab),static,7,False
+user_agent,Mozilla/5.0 (compatible; MkBot/3.0; lab),static,1,False

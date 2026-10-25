@@ -1,0 +1,8 @@
+technique_id,tactic,technique,sample_coverage,capabilities
+T1071.001,Command and Control,Application Layer Protocol: Web Protocols,1.0,contain hard-coded browser user agent; initialize WinINet HTTP client
+T1027,Defense Evasion,Obfuscated Files or Information,0.5,encode or decode data using XOR in a loop
+T1140,Defense Evasion,Deobfuscate/Decode Files or Information,0.5,encode or decode data using XOR in a loop
+T1480,Defense Evasion,Execution Guardrails,1.0,create mutex
+T1622,Defense Evasion,Debugger Evasion,1.0,check for debugger via API
+T1012,Discovery,Query Registry,1.0,open or query registry key
+T1547.001,Persistence,Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder,1.0,reference Run registry key for autostart

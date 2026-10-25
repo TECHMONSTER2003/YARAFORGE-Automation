@@ -1,0 +1,1273 @@
+{
+  "family": "MockBot",
+  "config": {
+    "max_file_size": 52428800,
+    "min_string_len": 6,
+    "max_string_len": 200,
+    "use_floss": true,
+    "floss_timeout": 600,
+    "use_capa": true,
+    "capa_timeout": 600,
+    "capa_rules": "rules/capa_custom",
+    "capa_sigs": "rules/capa_sigs",
+    "workers": 4,
+    "min_coverage": 0.5,
+    "max_goodware_hits": 0,
+    "max_rule_strings": 12,
+    "prefix_min_len": 8,
+    "substring_verify_top": 300,
+    "condition_ratio": 0.5,
+    "filesize_margin": 2.0,
+    "author": "yaraforge",
+    "stoplist_regex": [
+      "^GCC: \\(",
+      "mingw",
+      "libgcc",
+      "__[A-Za-z_]+__",
+      "This program cannot be run in DOS mode",
+      "^[A-Za-z0-9_]+\\.(dll|DLL|exe|EXE)$",
+      "^(Unknown error|Argument domain error|Overflow range error|Partial loss of significance)",
+      "^_+[A-Za-z]",
+      "^\\.(text|data|rdata|bss|idata|edata|pdata|xdata|reloc|rsrc|tls|CRT)",
+      "^[\\x20-\\x7e]?$",
+      "^(.)\\1{4,}$",
+      "^[A-Fa-f0-9]{1,8}$"
+    ]
+  },
+  "elapsed_s": 58.0,
+  "samples": [
+    {
+      "file": "mockbot_v2_a.exe",
+      "sha256": "4c2830767b00ecf9dae072dfe1e6e58b4a575e5a0f5f86b134da2d574beed826",
+      "size": 84480,
+      "type": "PE32 EXE",
+      "machine": "x86",
+      "imphash": "12da51a3c3520656c75594179c388046",
+      "entropy": 6.45,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 66982,
+          "rawsize": 67072,
+          "entropy": 6.43,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 13131,
+          "rawsize": 13312,
+          "entropy": 5.806,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 204,
+          "rawsize": 512,
+          "entropy": 0.95,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".tls",
+          "vsize": 8,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 2020,
+          "rawsize": 2048,
+          "entropy": 6.585,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 43,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "encode or decode data using XOR in a loop",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    },
+    {
+      "file": "mockbot_v2_b.exe",
+      "sha256": "b61828f632ff5a0b3324f5c218cba45529eb79e1da9e3dba2460dbe849fc2da9",
+      "size": 84480,
+      "type": "PE32 EXE",
+      "machine": "x86",
+      "imphash": "12da51a3c3520656c75594179c388046",
+      "entropy": 6.426,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 66406,
+          "rawsize": 66560,
+          "entropy": 6.432,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 13179,
+          "rawsize": 13312,
+          "entropy": 5.823,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".buildid",
+          "vsize": 28,
+          "rawsize": 512,
+          "entropy": 0.102,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 156,
+          "rawsize": 512,
+          "entropy": 0.225,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".tls",
+          "vsize": 8,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 2008,
+          "rawsize": 2048,
+          "entropy": 6.523,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 43,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "encode or decode data using XOR in a loop",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    },
+    {
+      "file": "mockbot_v2_c.exe",
+      "sha256": "9ffe0771a2792c2f40fd440d51a50dd6f673ece4962776dddb062d0fc5c2f895",
+      "size": 74752,
+      "type": "PE32+ EXE",
+      "machine": "x64",
+      "imphash": "bbc6a63dbd3292299fad795e7d93142b",
+      "entropy": 6.245,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 54198,
+          "rawsize": 54272,
+          "entropy": 6.388,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 17072,
+          "rawsize": 17408,
+          "entropy": 5.533,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 280,
+          "rawsize": 512,
+          "entropy": 1.013,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".pdata",
+          "vsize": 432,
+          "rawsize": 512,
+          "entropy": 3.669,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".tls",
+          "vsize": 16,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 112,
+          "rawsize": 512,
+          "entropy": 1.368,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 44,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "encode or decode data using XOR in a loop",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    },
+    {
+      "file": "mockbot_v2_d.exe",
+      "sha256": "3faf93e873837d19e4deb5f1a1fb57673baa7bab436a21737b535e9c70e71624",
+      "size": 74752,
+      "type": "PE32+ EXE",
+      "machine": "x64",
+      "imphash": "bbc6a63dbd3292299fad795e7d93142b",
+      "entropy": 6.216,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 53734,
+          "rawsize": 53760,
+          "entropy": 6.397,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 17056,
+          "rawsize": 17408,
+          "entropy": 5.526,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".buildid",
+          "vsize": 28,
+          "rawsize": 512,
+          "entropy": 0.102,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 232,
+          "rawsize": 512,
+          "entropy": 0.29,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".pdata",
+          "vsize": 372,
+          "rawsize": 512,
+          "entropy": 3.216,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".tls",
+          "vsize": 16,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 108,
+          "rawsize": 512,
+          "entropy": 1.366,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 44,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    },
+    {
+      "file": "mockbot_v2_e.exe",
+      "sha256": "d454c2a08a08de7db8cc69399561bdfad611bbac0939002807e3abd31952c448",
+      "size": 69120,
+      "type": "PE32 EXE",
+      "machine": "x86",
+      "imphash": "12da51a3c3520656c75594179c388046",
+      "entropy": 6.499,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 52946,
+          "rawsize": 53248,
+          "entropy": 6.567,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 11675,
+          "rawsize": 11776,
+          "entropy": 5.727,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".buildid",
+          "vsize": 28,
+          "rawsize": 512,
+          "entropy": 0.102,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 156,
+          "rawsize": 512,
+          "entropy": 0.225,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".tls",
+          "vsize": 8,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 1404,
+          "rawsize": 1536,
+          "entropy": 6.134,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 43,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "encode or decode data using XOR in a loop",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    },
+    {
+      "file": "mockbot_v2_f.exe",
+      "sha256": "53e1c6f71bd9b6f95a2e8c49b9bcc1563a7a0dcfea9ec33f0ab37ad35dcc46d1",
+      "size": 57856,
+      "type": "PE32+ EXE",
+      "machine": "x64",
+      "imphash": "bbc6a63dbd3292299fad795e7d93142b",
+      "entropy": 6.221,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 38534,
+          "rawsize": 38912,
+          "entropy": 6.534,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 15028,
+          "rawsize": 15360,
+          "entropy": 5.372,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".buildid",
+          "vsize": 28,
+          "rawsize": 512,
+          "entropy": 0.102,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 232,
+          "rawsize": 512,
+          "entropy": 0.256,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".pdata",
+          "vsize": 396,
+          "rawsize": 512,
+          "entropy": 3.111,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".tls",
+          "vsize": 16,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 108,
+          "rawsize": 512,
+          "entropy": 1.31,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 44,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    },
+    {
+      "file": "mockbot_v2_g.exe",
+      "sha256": "fd7a784b1d990a4ae1f3349ac3c5557275eccae9dff9bd94b85b0dfb2d5b1cfd",
+      "size": 74752,
+      "type": "PE32+ EXE",
+      "machine": "x64",
+      "imphash": "bbc6a63dbd3292299fad795e7d93142b",
+      "entropy": 6.216,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 53734,
+          "rawsize": 53760,
+          "entropy": 6.397,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 17056,
+          "rawsize": 17408,
+          "entropy": 5.526,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".buildid",
+          "vsize": 28,
+          "rawsize": 512,
+          "entropy": 0.102,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 232,
+          "rawsize": 512,
+          "entropy": 0.29,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".pdata",
+          "vsize": 372,
+          "rawsize": 512,
+          "entropy": 3.216,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".tls",
+          "vsize": 16,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 108,
+          "rawsize": 512,
+          "entropy": 1.366,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 44,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    },
+    {
+      "file": "mockbot_v3_drift.exe",
+      "sha256": "2cc42c1b44d372976293d6c97908e2df8d3de276797f9516f9e8e70d45c97e8c",
+      "size": 74752,
+      "type": "PE32+ EXE",
+      "machine": "x64",
+      "imphash": "bbc6a63dbd3292299fad795e7d93142b",
+      "entropy": 6.216,
+      "sections": [
+        {
+          "name": ".text",
+          "vsize": 53734,
+          "rawsize": 53760,
+          "entropy": 6.397,
+          "exec": true,
+          "write": false
+        },
+        {
+          "name": ".rdata",
+          "vsize": 17056,
+          "rawsize": 17408,
+          "entropy": 5.525,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".buildid",
+          "vsize": 28,
+          "rawsize": 512,
+          "entropy": 0.102,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".data",
+          "vsize": 232,
+          "rawsize": 512,
+          "entropy": 0.29,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".pdata",
+          "vsize": 372,
+          "rawsize": 512,
+          "entropy": 3.216,
+          "exec": false,
+          "write": false
+        },
+        {
+          "name": ".tls",
+          "vsize": 16,
+          "rawsize": 512,
+          "entropy": 0.0,
+          "exec": false,
+          "write": true
+        },
+        {
+          "name": ".reloc",
+          "vsize": 108,
+          "rawsize": 512,
+          "entropy": 1.366,
+          "exec": false,
+          "write": false
+        }
+      ],
+      "import_count": 44,
+      "packer_hints": [],
+      "floss": {
+        "decoded": [],
+        "stack": [],
+        "tight": []
+      },
+      "capabilities": [
+        "check for debugger via API",
+        "contain hard-coded browser user agent",
+        "create mutex",
+        "initialize WinINet HTTP client",
+        "open or query registry key",
+        "reference Run registry key for autostart"
+      ]
+    }
+  ],
+  "goodware": {
+    "files": 152,
+    "pe": 152,
+    "unique_strings": 245368
+  },
+  "scoring": {
+    "stats": {
+      "unique_strings": 299,
+      "survivors_before_verify": 7,
+      "prefix_generalised": 2,
+      "verified": 7,
+      "selected": 7,
+      "rejected": {
+        "goodware_exact": 69,
+        "stoplist": 31,
+        "low_coverage": 171,
+        "mostly_digits_punct": 13,
+        "low_diversity": 4,
+        "no_letters": 6
+      }
+    },
+    "selected": [
+      {
+        "value": "Mozilla/4.0 (compatible; MkBot/2.1; lab)",
+        "source": "static",
+        "encodings": [
+          "ascii"
+        ],
+        "samples": [
+          "mockbot_v2_a.exe",
+          "mockbot_v2_b.exe",
+          "mockbot_v2_c.exe",
+          "mockbot_v2_d.exe",
+          "mockbot_v2_e.exe",
+          "mockbot_v2_f.exe",
+          "mockbot_v2_g.exe"
+        ],
+        "coverage": 0.875,
+        "goodware_hits": 0,
+        "ioc": "user_agent",
+        "score": 0.925
+      },
+      {
+        "value": "MKBCFG::v2::build=",
+        "source": "prefix",
+        "encodings": [
+          "ascii"
+        ],
+        "samples": [
+          "mockbot_v2_a.exe",
+          "mockbot_v2_b.exe",
+          "mockbot_v2_c.exe",
+          "mockbot_v2_d.exe",
+          "mockbot_v2_e.exe",
+          "mockbot_v2_f.exe",
+          "mockbot_v2_g.exe",
+          "mockbot_v3_drift.exe"
+        ],
+        "coverage": 1.0,
+        "goodware_hits": 0,
+        "ioc": "config_marker",
+        "score": 0.9125
+      },
+      {
+        "value": "Global\\MkB_7f3a9c21",
+        "source": "static",
+        "encodings": [
+          "ascii"
+        ],
+        "samples": [
+          "mockbot_v2_a.exe",
+          "mockbot_v2_b.exe",
+          "mockbot_v2_c.exe",
+          "mockbot_v2_d.exe",
+          "mockbot_v2_e.exe",
+          "mockbot_v2_f.exe",
+          "mockbot_v2_g.exe"
+        ],
+        "coverage": 0.875,
+        "goodware_hits": 0,
+        "ioc": "mutex",
+        "score": 0.8438
+      },
+      {
+        "value": "mutex=%d run=%d net=%d (no network activity performed)",
+        "source": "static",
+        "encodings": [
+          "ascii"
+        ],
+        "samples": [
+          "mockbot_v2_a.exe",
+          "mockbot_v2_b.exe",
+          "mockbot_v2_c.exe",
+          "mockbot_v2_d.exe",
+          "mockbot_v2_e.exe",
+          "mockbot_v2_f.exe",
+          "mockbot_v2_g.exe",
+          "mockbot_v3_drift.exe"
+        ],
+        "coverage": 1.0,
+        "goodware_hits": 0,
+        "ioc": null,
+        "score": 0.8
+      },
+      {
+        "value": "[MockBot harmless lab sample] cfg=%s tag=%s junk=%u",
+        "source": "static",
+        "encodings": [
+          "ascii"
+        ],
+        "samples": [
+          "mockbot_v2_a.exe",
+          "mockbot_v2_b.exe",
+          "mockbot_v2_c.exe",
+          "mockbot_v2_e.exe",
+          "mockbot_v2_f.exe"
+        ],
+        "coverage": 0.625,
+        "goodware_hits": 0,
+        "ioc": "config_marker",
+        "score": 0.775
+      },
+      {
+        "value": "http://c2.mockbot.invalid/gate.",
+        "source": "prefix",
+        "encodings": [
+          "ascii"
+        ],
+        "samples": [
+          "mockbot_v2_b.exe",
+          "mockbot_v2_d.exe",
+          "mockbot_v2_g.exe",
+          "mockbot_v3_drift.exe"
+        ],
+        "coverage": 0.5,
+        "goodware_hits": 0,
+        "ioc": "url",
+        "score": 0.6938
+      },
+      {
+        "value": "MkB_loadH",
+        "source": "static",
+        "encodings": [
+          "ascii"
+        ],
+        "samples": [
+          "mockbot_v2_d.exe",
+          "mockbot_v2_f.exe",
+          "mockbot_v2_g.exe",
+          "mockbot_v3_drift.exe"
+        ],
+        "coverage": 0.5,
+        "goodware_hits": 0,
+        "ioc": null,
+        "score": 0.3563
+      }
+    ],
+    "imports": [
+      {
+        "import": "api-ms-win-crt-string-l1-1-0.dll!strcpy",
+        "goodware_ratio": 0.0
+      },
+      {
+        "import": "wininet.dll!internetclosehandle",
+        "goodware_ratio": 0.02
+      },
+      {
+        "import": "wininet.dll!internetopena",
+        "goodware_ratio": 0.02
+      },
+      {
+        "import": "kernel32.dll!createmutexa",
+        "goodware_ratio": 0.033
+      }
+    ]
+  },
+  "attack": [
+    {
+      "id": "T1071.001",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol: Web Protocols",
+      "capabilities": [
+        "contain hard-coded browser user agent",
+        "initialize WinINet HTTP client"
+      ],
+      "samples": [
+        "mockbot_v2_a.exe",
+        "mockbot_v2_b.exe",
+        "mockbot_v2_c.exe",
+        "mockbot_v2_d.exe",
+        "mockbot_v2_e.exe",
+        "mockbot_v2_f.exe",
+        "mockbot_v2_g.exe",
+        "mockbot_v3_drift.exe"
+      ],
+      "coverage": 1.0
+    },
+    {
+      "id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "capabilities": [
+        "encode or decode data using XOR in a loop"
+      ],
+      "samples": [
+        "mockbot_v2_a.exe",
+        "mockbot_v2_b.exe",
+        "mockbot_v2_c.exe",
+        "mockbot_v2_e.exe"
+      ],
+      "coverage": 0.5
+    },
+    {
+      "id": "T1140",
+      "tactic": "Defense Evasion",
+      "technique": "Deobfuscate/Decode Files or Information",
+      "capabilities": [
+        "encode or decode data using XOR in a loop"
+      ],
+      "samples": [
+        "mockbot_v2_a.exe",
+        "mockbot_v2_b.exe",
+        "mockbot_v2_c.exe",
+        "mockbot_v2_e.exe"
+      ],
+      "coverage": 0.5
+    },
+    {
+      "id": "T1480",
+      "tactic": "Defense Evasion",
+      "technique": "Execution Guardrails",
+      "capabilities": [
+        "create mutex"
+      ],
+      "samples": [
+        "mockbot_v2_a.exe",
+        "mockbot_v2_b.exe",
+        "mockbot_v2_c.exe",
+        "mockbot_v2_d.exe",
+        "mockbot_v2_e.exe",
+        "mockbot_v2_f.exe",
+        "mockbot_v2_g.exe",
+        "mockbot_v3_drift.exe"
+      ],
+      "coverage": 1.0
+    },
+    {
+      "id": "T1622",
+      "tactic": "Defense Evasion",
+      "technique": "Debugger Evasion",
+      "capabilities": [
+        "check for debugger via API"
+      ],
+      "samples": [
+        "mockbot_v2_a.exe",
+        "mockbot_v2_b.exe",
+        "mockbot_v2_c.exe",
+        "mockbot_v2_d.exe",
+        "mockbot_v2_e.exe",
+        "mockbot_v2_f.exe",
+        "mockbot_v2_g.exe",
+        "mockbot_v3_drift.exe"
+      ],
+      "coverage": 1.0
+    },
+    {
+      "id": "T1012",
+      "tactic": "Discovery",
+      "technique": "Query Registry",
+      "capabilities": [
+        "open or query registry key"
+      ],
+      "samples": [
+        "mockbot_v2_a.exe",
+        "mockbot_v2_b.exe",
+        "mockbot_v2_c.exe",
+        "mockbot_v2_d.exe",
+        "mockbot_v2_e.exe",
+        "mockbot_v2_f.exe",
+        "mockbot_v2_g.exe",
+        "mockbot_v3_drift.exe"
+      ],
+      "coverage": 1.0
+    },
+    {
+      "id": "T1547.001",
+      "tactic": "Persistence",
+      "technique": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+      "capabilities": [
+        "reference Run registry key for autostart"
+      ],
+      "samples": [
+        "mockbot_v2_a.exe",
+        "mockbot_v2_b.exe",
+        "mockbot_v2_c.exe",
+        "mockbot_v2_d.exe",
+        "mockbot_v2_e.exe",
+        "mockbot_v2_f.exe",
+        "mockbot_v2_g.exe",
+        "mockbot_v3_drift.exe"
+      ],
+      "coverage": 1.0
+    }
+  ],
+  "rule": {
+    "path": "out_demo\\mockbot.yar",
+    "strings_rule": "MockBot_Strings",
+    "imports_rule": "MockBot_Imports_Baseline",
+    "condition_n": 4,
+    "string_count": 7,
+    "size_limit_kb": 165
+  },
+  "evaluation": {
+    "MockBot_Strings": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 153,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "missed": [],
+      "false_positives": []
+    },
+    "MockBot_Imports_Baseline": {
+      "tp": 8,
+      "fp": 0,
+      "tn": 153,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "missed": [],
+      "false_positives": []
+    }
+  },
+  "per_sample_hits": {
+    "mockbot_v2_a.exe": [
+      "$s1",
+      "$s2",
+      "$s3",
+      "$s4",
+      "$s5"
+    ],
+    "mockbot_v2_b.exe": [
+      "$s1",
+      "$s2",
+      "$s3",
+      "$s4",
+      "$s5",
+      "$s6"
+    ],
+    "mockbot_v2_c.exe": [
+      "$s1",
+      "$s2",
+      "$s3",
+      "$s4",
+      "$s5"
+    ],
+    "mockbot_v2_d.exe": [
+      "$s1",
+      "$s2",
+      "$s3",
+      "$s4",
+      "$s5",
+      "$s6",
+      "$s7"
+    ],
+    "mockbot_v2_e.exe": [
+      "$s1",
+      "$s2",
+      "$s3",
+      "$s4",
+      "$s5"
+    ],
+    "mockbot_v2_f.exe": [
+      "$s1",
+      "$s2",
+      "$s3",
+      "$s4",
+      "$s5",
+      "$s7"
+    ],
+    "mockbot_v2_g.exe": [
+      "$s1",
+      "$s2",
+      "$s3",
+      "$s4",
+      "$s5",
+      "$s6",
+      "$s7"
+    ],
+    "mockbot_v3_drift.exe": [
+      "$s2",
+      "$s4",
+      "$s5",
+      "$s6",
+      "$s7"
+    ]
+  },
+  "loo": [
+    {
+      "held_out": "mockbot_v2_a.exe",
+      "detected": true,
+      "matched": [
+        "$s1",
+        "$s2",
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 7,
+      "goodware_fp": 0
+    },
+    {
+      "held_out": "mockbot_v2_b.exe",
+      "detected": true,
+      "matched": [
+        "$s1",
+        "$s2",
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 6,
+      "goodware_fp": 0
+    },
+    {
+      "held_out": "mockbot_v2_c.exe",
+      "detected": true,
+      "matched": [
+        "$s1",
+        "$s2",
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 7,
+      "goodware_fp": 0
+    },
+    {
+      "held_out": "mockbot_v2_d.exe",
+      "detected": true,
+      "matched": [
+        "$s1",
+        "$s2",
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 5,
+      "goodware_fp": 0
+    },
+    {
+      "held_out": "mockbot_v2_e.exe",
+      "detected": true,
+      "matched": [
+        "$s1",
+        "$s2",
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 7,
+      "goodware_fp": 0
+    },
+    {
+      "held_out": "mockbot_v2_f.exe",
+      "detected": true,
+      "matched": [
+        "$s1",
+        "$s2",
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 6,
+      "goodware_fp": 0
+    },
+    {
+      "held_out": "mockbot_v2_g.exe",
+      "detected": true,
+      "matched": [
+        "$s1",
+        "$s2",
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 5,
+      "goodware_fp": 0
+    },
+    {
+      "held_out": "mockbot_v3_drift.exe",
+      "detected": true,
+      "matched": [
+        "$s3",
+        "$s4",
+        "$s5"
+      ],
+      "rule_strings": 5,
+      "goodware_fp": 0
+    }
+  ],
+  "iocs": [
+    {
+      "type": "sha256",
+      "value": "2cc42c1b44d372976293d6c97908e2df8d3de276797f9516f9e8e70d45c97e8c",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "sha256",
+      "value": "3faf93e873837d19e4deb5f1a1fb57673baa7bab436a21737b535e9c70e71624",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "sha256",
+      "value": "4c2830767b00ecf9dae072dfe1e6e58b4a575e5a0f5f86b134da2d574beed826",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "sha256",
+      "value": "53e1c6f71bd9b6f95a2e8c49b9bcc1563a7a0dcfea9ec33f0ab37ad35dcc46d1",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "sha256",
+      "value": "9ffe0771a2792c2f40fd440d51a50dd6f673ece4962776dddb062d0fc5c2f895",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "sha256",
+      "value": "b61828f632ff5a0b3324f5c218cba45529eb79e1da9e3dba2460dbe849fc2da9",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "sha256",
+      "value": "d454c2a08a08de7db8cc69399561bdfad611bbac0939002807e3abd31952c448",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "sha256",
+      "value": "fd7a784b1d990a4ae1f3349ac3c5557275eccae9dff9bd94b85b0dfb2d5b1cfd",
+      "origin": "file",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "mutex",
+      "value": "Global\\MkB_7f3a9c21",
+      "origin": "static",
+      "samples": 7,
+      "in_goodware": false
+    },
+    {
+      "type": "mutex",
+      "value": "Global\\MkB3_e01d44",
+      "origin": "static",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "registry",
+      "value": "Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "origin": "static",
+      "samples": 8,
+      "in_goodware": true
+    },
+    {
+      "type": "url",
+      "value": "http://c2.mockbot.invalid/gate.p[MockBot harmless lab sample] cfg=%s tag=%s junk=%u",
+      "origin": "static",
+      "samples": 3,
+      "in_goodware": false
+    },
+    {
+      "type": "url",
+      "value": "http://c2.mockbot.invalid/gate.pMkB_load",
+      "origin": "static",
+      "samples": 1,
+      "in_goodware": false
+    },
+    {
+      "type": "user_agent",
+      "value": "Mozilla/4.0 (compatible; MkBot/2.1; lab)",
+      "origin": "static",
+      "samples": 7,
+      "in_goodware": false
+    },
+    {
+      "type": "user_agent",
+      "value": "Mozilla/5.0 (compatible; MkBot/3.0; lab)",
+      "origin": "static",
+      "samples": 1,
+      "in_goodware": false
+    }
+  ]
+}
